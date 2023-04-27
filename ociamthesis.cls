@@ -80,9 +80,9 @@
 %
 
 \ifmc@nobind
-\usepackage[includehead,hmargin={3.1cm, 3.1cm}, vmargin={2.5cm,2.7cm}, headsep=.8cm,footskip=1.2cm]{geometry}
+\usepackage[includehead,hmargin={2cm, 2cm}, vmargin={2.5cm,2.7cm}, headsep=.8cm,footskip=1.2cm]{geometry}
 \else
-\usepackage[includehead,hmargin={3.6cm, 2.6cm}, vmargin={2.5cm,2.7cm}, headsep=.8cm,footskip=1.2cm]{geometry}
+\usepackage[includehead,hmargin={3.0cm, 2.0cm}, vmargin={2.5cm,2.7cm}, headsep=.8cm,footskip=1.2cm]{geometry}
 \fi
 
 \usepackage{xcolor}
@@ -117,7 +117,8 @@
 \usepackage{nicefrac}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{textcomp}
+\usepackage{textcomp}  
+\usepackage{subcaption}
 
 \usepackage{longtable} 
 	% Allows tables to span multiple pages (this package must be called before hyperref)
