@@ -46,3 +46,25 @@ Culturing Huh7 cells in predominantly unsaturated (OPLA) or saturated (POLA) FAs
         \caption{\textbf{Effect of media FA composition on TG accumulation and autophagy.} Cells were cultured for 7 days in either media with no FA (Control), a predominantly unsaturated FA mix (OPLA) or a predominantly saturated FA mix (POLA). Lipids were extracted and quantified by gas chromatography to measure \textbf{A)} total intracellular TG and \textbf{B)} the composition of intracellular TG. \textbf{C-E)} Autophagic flux was calculated as LC3-II intensity (relative to housekeeper protein $\alpha$-Tubulin): (BAF - Basal)/Basal. Representative of three biological repeats (n=3) carried out in technical duplicate. * p < 0.05, ** p < 0.01, *** p < 0.001. Abbreviations: BAF, Bafilomycin A1; TG, Triglyceride.}
         \label{fig:OPLAPOLA}
 \end{figure}
+
+RNA sequencing data of cells cultured in media supplemented with 800 \uM OPLA or POLA or free from FAs (Control) was analysed to provide further insight. Principle component analysis (PCA) showed that the difference in gene expression between control and OPLA/POLA conditions accounted for the largest component of the total variance (dimension 1 - 77.1\%) and that media FA composition (OPLA vs POLA) accounted for the second largest component (dimension 2 - 9.3\%) as shown in Figure \ref{fig:PCA}. A heatmap representing differential expression of genes involved in autophagic activation \cite{Bordi2021ATranscription} confirmed an overall suppression of autophagic processes in OPLA- and POLA-treated cells compared to controls cells (Figure \ref{fig:ATG heatmap}). Gene set enrichment analysis (GSEA) showed that DNA replication and cell cycle associated genes were the most significantly activated pathways whereas autophagy, infection and endoplasmic reticulum protein processing pathways were most significantly suppressed pathways in both OPLA and POLA treated cells compared to control cells (Figures \ref{fig:OPLA GSEA} and \ref{fig:POLA GSEA}).
+
+\begin{figure}[h!]
+  \centering
+  {\phantomsubcaption\label{fig:PCA}}
+  {\phantomsubcaption\label{fig:ATG heatmap}}
+   {\phantomsubcaption\label{fig:OPLA GSEA}}
+    {\phantomsubcaption\label{fig:POLA GSEA}}
+  \tikz\node[inner sep=0pt,label={[anchor=north west]north west:\subref{fig:PCA}}] {\includegraphics[width=0.49\textwidth]{figures/ch3-Model Development/PCA.png}};
+  \tikz\node[inner sep=0pt,label={[anchor=north west]north west:\subref{fig:ATG heatmap}}] {\includegraphics[width=0.49\textwidth]{figures/ch3-Model Development/ATG heatmap.png}};
+   \tikz\node[inner sep=0pt,label={[anchor=north west]north west:\subref{fig:OPLA GSEA}}] {\includegraphics[width=0.49\textwidth]{figures/ch3-Model Development/OPLA GSEA.png}};
+      \tikz\node[inner sep=0pt,label={[anchor=north west]north west:\subref{fig:POLA GSEA}}] {\includegraphics[width=0.49\textwidth]{figures/ch3-Model Development/POLA GSEA.png}};
+\end{figure} 
+
+\begin{figure}[h!]
+  \centering
+  {\phantomsubcaption\label{fig:OPLA NASH}}
+  {\phantomsubcaption\label{fig:POLA NASH}}
+  \tikz\node[inner sep=0pt,label={[anchor=north west]north west:\subref{fig:OPLA NASH}}] {\includegraphics[width=0.49\textwidth]{figures/ch3-Model Development/OPLA NASH.jpg}};
+  \tikz\node[inner sep=0pt,label={[anchor=north west]north west:\subref{fig:POLA NASH}}] {\includegraphics[width=0.49\textwidth]{figures/ch3-Model Development/POLA NASH.jpg}};
+\end{figure}
