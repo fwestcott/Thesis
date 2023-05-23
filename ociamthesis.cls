@@ -119,6 +119,8 @@
 \usepackage{amssymb}
 \usepackage{textcomp}  
 \usepackage{subcaption}
+\renewcommand\thesubfigure{\Alph{subfigure}}
+\usepackage{tikz} % loads graphicx and xcolor
 
 \usepackage{longtable} 
 	% Allows tables to span multiple pages (this package must be called before hyperref)
